@@ -1,0 +1,134 @@
+[
+  {
+    "delivery": "",
+    "brand": "피주얼리",
+    "name": "순금 골드바 3.75g 24k 99.9%",
+    "price": 925020,
+    "originalPrice": 1027800,
+    "discount": 10,
+    "benefit": "최고판매가 1,042,000원",
+    "unitPrice": "",
+    "ssgClub": "",
+    "cardDiscount": "",
+    "badges": [
+      "무료배송"
+    ],
+    "rating": "4.8",
+    "reviewCount": "427",
+    "image": "./image/순금골드바.avif",
+    "url": "#",
+    "id": "product-001"
+  },
+  {
+    "delivery": "주간배송",
+    "deliveryInfo": "내일(화) 14:00까지 도착",
+    "brand": "바른고을",
+    "name": "바른고을 의성진쌀 10kg",
+    "price": 38980,
+    "originalPrice": null,
+    "discount": null,
+    "benefit": "최고판매가 42,980원",
+    "unitPrice": "(100g당 390원)",
+    "ssgClub": "쓱7클럽 -2,728원 적립",
+    "cardDiscount": "5% 카드할인",
+    "badges": [
+      "4만↑무료배송",
+      "#고소한맛",
+      "#구수한맛"
+    ],
+    "rating": "4.8",
+    "reviewCount": "43,715",
+    "image": "./image/의성고을.avif",
+    "url": "detail.html?id=rice-001",
+    "id": "rice-001"
+  },
+  {
+    "delivery": "트레이더스",
+    "deliveryInfo": "내일(화) 23:59까지 도착",
+    "brand": "트레이더스",
+    "name": "무화과 1.5kg 박스",
+    "price": 15980,
+    "originalPrice": 18980,
+    "discount": 15,
+    "benefit": "",
+    "unitPrice": "(100g당 1,065원)",
+    "ssgClub": "쓱7클럽 -1,118원 적립",
+    "cardDiscount": "5% 카드할인",
+    "badges": [
+      "9만↑무료배송",
+      "#달달한맛"
+    ],
+    "rating": "4.4",
+    "reviewCount": "1,268",
+    "image": "./image/무화과.avif",
+    "url": "#",
+    "id": "product-003"
+  },
+  {
+    "delivery": "트레이더스",
+    "deliveryInfo": "내일(화) 23:59까지 도착",
+    "brand": "트레이더스",
+    "name": "백오이 (7입) 봉",
+    "price": 7610,
+    "originalPrice": null,
+    "discount": null,
+    "benefit": "최고판매가 8,610원",
+    "unitPrice": "(1개당 7,610원)",
+    "ssgClub": "쓱7클럽 -532원 적립",
+    "cardDiscount": "2,000원 카드할인",
+    "badges": [
+      "9만↑무료배송",
+      "#아삭아삭",
+      "#신선한제품"
+    ],
+    "rating": "4.8",
+    "reviewCount": "15,969",
+    "image": "./image/백오이.avif",
+    "url": "#",
+    "id": "product-004"
+  },
+  {
+    "delivery": "트레이더스",
+    "deliveryInfo": "내일(화) 23:59까지 도착",
+    "brand": "롯데칠성",
+    "name": "레쓰비마일드 175ml X 30입",
+    "price": 11480,
+    "originalPrice": null,
+    "discount": null,
+    "benefit": "",
+    "unitPrice": "(100ml당 219원)",
+    "ssgClub": "쓱7클럽 -803원 적립",
+    "cardDiscount": "5% 카드할인",
+    "badges": [
+      "9만↑무료배송",
+      "#사무실간식",
+      "#달달한맛"
+    ],
+    "rating": "4.9",
+    "reviewCount": "5,131",
+    "image": "./image/레쓰비.avif",
+    "url": "#",
+    "id": "product-005"
+  },
+  {
+    "delivery": "신세계백화점",
+    "deliveryInfo": "",
+    "brand": "시리즈",
+    "name": "모즈코트(SHCAW26921KHD)",
+    "price": 409860,
+    "originalPrice": 455400,
+    "discount": 10,
+    "benefit": "",
+    "unitPrice": "",
+    "ssgClub": "",
+    "cardDiscount": "",
+    "badges": [
+      "무료배송"
+    ],
+    "rating": "",
+    "reviewCount": "",
+    "image": "./image/패딩.avif",
+    "url": "#",
+    "id": "product-006"
+  }
+]

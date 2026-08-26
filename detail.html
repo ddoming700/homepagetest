@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바른고을 의성진쌀 10kg - 상품 상세</title>
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 최상단 띠 배너 -->
+    <div class="top-event-banner">
+        매일 룰렛 돌리고 선물 받으세요! 로보락 S10 득템 찬스! <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <span class="trust-text">믿고 사는 즐거움</span>
+                <a href="./index.html" class="logo" aria-label="SSG.COM 메인으로 이동">SSG.COM</a>
+                <div class="mall-links">
+                    <a href="#">이마트몰</a>
+                    <a href="#">신세계몰</a>
+                    <a href="#">신세계백화점</a>
+                </div>
+            </div>
+            <div class="search-area">
+                <div class="search-box">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-user"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="gnb">
+            <div class="gnb-inner">
+                <ul class="gnb-left">
+                    <li class="all-category"><i class="fas fa-bars"></i> 전체 카테고리</li>
+                    <li>오반장</li>
+                    <li>쓱-특가</li>
+                    <li>이벤트</li>
+                    <li>베스트</li>
+                    <li>브랜드관</li>
+                    <li>선물하기</li>
+                    <li>사업자 매장</li>
+                    <li>추석</li>
+                    <li>장보기 <i class="fas fa-chevron-down"></i></li>
+                </ul>
+                <ul class="gnb-right">
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>고객센터</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인 레이아웃 (좌측 컨텐츠 + 우측 사이드바) -->
+    <main class="main-container">
+        
+        <div class="content-left">
+            <nav class="breadcrumb" id="product-category"></nav>
+
+            <!-- 상품 주요 스펙 -->
+            <section class="product-top-section">
+                <div class="image-gallery">
+                    <div class="main-image-box">
+                        <img id="product-image" src="" alt="바른고을 의성진쌀 10kg">
+                    </div>
+                </div>
+                
+                <div class="spec-info">
+                    <span class="mall-tag">이마트</span>
+                    <h1 class="product-title" id="product-title"></h1>
+                    
+                    <div class="rating-review">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-score" id="product-rating"></span>
+                        <span class="review-count" id="product-reviews"></span>
+                    </div>
+
+                    <div class="origin-info" id="product-origin"></div>
+
+                    <div class="price-area">
+                        <div class="orig-price-row">
+                            <span class="orig-price" id="product-orig-price"></span>
+                        </div>
+                        <div class="current-price-row">
+                            <span class="price" id="product-price"></span>
+                            <span class="unit-price" id="product-unit"></span>
+                        </div>
+                    </div>
+
+                    <div class="benefit-box">
+                        <div class="benefit-row">
+                            <span class="badge-green">쓱클럽</span>
+                            <span id="benefit-desc">가입하면 -2,728원 적립 <i class="far fa-question-circle"></i></span>
+                        </div>
+                        <div class="card-price-row">
+                            <span class="card-label">카드혜택가</span>
+                            <strong class="card-price" id="product-card-price"></strong>
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-info">
+                        <a href="#">로그인하시면 배송지에 맞는 배송유형을 확인할 수 있습니다.</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 추천 상품 슬라이더 (좌우 화살표 포함) -->
+            <section class="recommend-section">
+                <h3 class="section-title">고객님을 위한 추천 상품 <span class="ad-badge">AD</span></h3>
+                <div class="recommend-slider-wrap">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="recommend-grid" id="recommend-grid">
+                        <!-- JS 렌더링 -->
+                    </div>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <!-- 스티키 탭 메뉴 (반응형 바) -->
+            <div class="tab-wrapper" id="tab-wrapper">
+                <div class="tab-menu">
+                    <button class="tab-btn active" onclick="scrollToSection('detail-section', this)">상품상세정보</button>
+                    <button class="tab-btn" onclick="scrollToSection('review-section', this)">고객리뷰 (43,728)</button>
+                    <button class="tab-btn" onclick="scrollToSection('recommend-section', this)">추천 상품</button>
+                    <button class="tab-btn" onclick="scrollToSection('return-section', this)">교환/반품 안내</button>
+                </div>
+            </div>
+
+            <!-- 상세 컨텐츠 탭 영역 -->
+            <div class="tab-content-area">
+                
+                <!-- 상품상세정보 (내부사진 + 펼쳐보기) -->
+                <div id="detail-section" class="content-section">
+                    
+                    <!-- 이미지 상세 (처음엔 상단만 보이게) -->
+                    <div class="detail-img-wrap" id="detail-img-wrap">
+                        <img id="detail-img" src="" alt="상품 상세설명">
+                        <div class="gradient-cover" id="gradient-cover"></div>
+                    </div>
+                    
+                    <!-- 펼쳐보기 버튼 -->
+                    <div class="expand-container">
+                        <button class="btn-expand" id="btn-expand" onclick="toggleDetail()">상세정보 펼쳐보기 ▼</button>
+                    </div>
+
+                    <!-- 상품필수정보 표 -->
+                    <div class="product-info-table">
+                        <h3>상품필수정보</h3>
+                        <table>
+                            <tr>
+                                <th>품목 또는 명칭</th>
+                                <td>바른고을 의성진쌀 10kg</td>
+                            </tr>
+                            <tr>
+                                <th>포장 단위별 내용물의 용량 (중량), 수량, 크기</th>
+                                <td>10kg</td>
+                            </tr>
+                            <tr>
+                                <th>생산자</th>
+                                <td>각 입고일별 생산자가 상이하고 수시로 변경됩니다. * 해당 정보에 대한 문의는 고객센터(1577-3419)로 문의해주세요.</td>
+                            </tr>
+                            <tr>
+                                <th>수입자</th>
+                                <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                                <th>원산지</th>
+                                <td>의성진쌀(국내산)</td>
+                            </tr>
+                            <tr>
+                                <th>제조연월일/유통기한, 소비기한 또는 품질유지기한</th>
+                                <td>각 농가별, 생산자(산지별) 제조일이 상이하며, 해당 정보에 대한 문의는 고객센터(1577-3419)로 문의해주세요./품질유지기한 신선식품으로 별도의 유통기한이 없으나 가급적 빠른섭취하시기 바랍니다.</td>
+                            </tr>
+                            <tr>
+                                <th>유전자변형 농수산물 여부</th>
+                                <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                                <th>지리적 표시제 관련 공인인증 획득여부</th>
+                                <td>해당사항 없음</td>
+                            </tr>
+                            <tr>
+                                <th>상품 구성</th>
+                                <td>바른고을 의성진쌀 10kg</td>
+                            </tr>
+                            <tr>
+                                <th>보관방법 또는 취급방법</th>
+                                <td>직사광선 및 습기를 피해 건조하고 서늘한 곳에 보관하세요.</td>
+                            </tr>
+                            <tr>
+                                <th>식품등의표시·광고에관한법률에 따른 소비자안전을 위한 주의사항</th>
+                                <td>부정, 불량식품 신고는 국번없이 1399</td>
+                            </tr>
+                            <tr>
+                                <th>소비자 상담 관련 전화번호</th>
+                                <td>1577-3419</td>
+                            </tr>
+                            <tr>
+                                <th>수입식품안전관리특별법에 따른 수입신고 필함 여부</th>
+                                <td>해당사항 없음</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="product-info-table">
+                        <h3>제품정보 <span style="float:right; font-size:12px; font-weight:normal; color:#666;">정보 수정 요청 ></span></h3>
+                        <p style="font-size:12px; color:#666; margin-bottom:10px;"><i class="fas fa-info-circle"></i> 제품정보는 참고용으로, 실제 제품 정보와 차이가 있을 수 있습니다. 정확한 내용은 상품상세정보 또는 상품필수정보에서 확인해주세요.</p>
+                        <table>
+                            <tr>
+                                <th>단위/용량</th>
+                                <td>10kg</td>
+                            </tr>
+                            <tr>
+                                <th>원산지</th>
+                                <td>의성진쌀(국내산)</td>
+                            </tr>
+                        </table>
+                        <div class="report-box">
+                            <i class="fas fa-exclamation-triangle"></i> 상품 정보에 문제가 있나요? <span style="float:right;">신고하기 ></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 고객 리뷰 -->
+                <div id="review-section" class="content-section review-section">
+                    <h3>고객리뷰(43,728) <i class="far fa-question-circle" style="color:#ccc;"></i></h3>
+                    
+                    <div class="review-summary">
+                        <div class="review-score">
+                            <div class="stars-large">★★★★★</div>
+                            <div class="score-num">4.8</div>
+                            <div class="total-reviews">총 43,728건 리뷰</div>
+                        </div>
+                    </div>
+
+                    <div class="ai-summary">
+                        <div class="ai-icon">Ai</div>
+                        <h4>AI가 최근 리뷰를 요약했어요 <i class="far fa-question-circle" style="color:#ccc;"></i></h4>
+                        <div class="positive-rate">긍정리뷰 <strong>97%</strong></div>
+                        <p>바른고을 의성진쌀은 저렴한 가격대에 뛰어난 가성비를 자랑하는 제품이에요. 최근 도정되어 신선하고, 쌀알이 깨끗하며 깨진 것 없이 좋은 상태로 도착합니다. 밥을 지으면 찰기가 있고 맛있어서 많은 고객님들이 계속 재구매하고 있으며, 주변 분들에게도 추천할 정도로 만족도가 높아요. 품질을 믿고 자주 구매하게 되는 쌀이에요.</p>
+                        <div class="ai-feedback">
+                            요약이 도움이 되었나요? <i class="far fa-thumbs-up" style="margin-left:5px;"></i> <i class="far fa-thumbs-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="review-chart">
+                        <div class="chart-item">
+                            <div class="chart-title">신선도</div>
+                            <div class="chart-val">신선해요</div>
+                            <div class="bar-bg"><div class="bar-fill" style="width:81%;"></div></div>
+                            <div class="chart-stat">(4,150) <strong>81%</strong></div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-title">맛만족도</div>
+                            <div class="chart-val">맛있어요</div>
+                            <div class="bar-bg"><div class="bar-fill" style="width:80%;"></div></div>
+                            <div class="chart-stat">(4,054) <strong>80%</strong></div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-title">포장</div>
+                            <div class="chart-val">꼼꼼해요</div>
+                            <div class="bar-bg"><div class="bar-fill" style="width:79%;"></div></div>
+                            <div class="chart-stat">(4,021) <strong>79%</strong></div>
+                        </div>
+                    </div>
+                    <p class="review-notice">※ 리뷰 등록, 수정, 삭제 및 상세 내용은 [MY SSG > 나의 활동관리 > 상품 리뷰]에서 확인하실 수 있습니다.</p>
+
+                    <div class="photo-reviews">
+                        <h4>포토&동영상 리뷰(1170) <span class="more">더보기 ></span></h4>
+                        <div class="photo-grid" id="photo-grid">
+                            <!-- JS 연동 -->
+                        </div>
+                    </div>
+
+                    <div class="review-filter">
+                        <strong style="color:#111; border-bottom: 2px solid #111; padding-bottom:10px;">전체(43,728)</strong>
+                        <span>포토(1,159)</span>
+                        <span>동영상(11)</span>
+                        <div class="filter-right">추천순 ▼ <button class="btn-store-only">내 점포 리뷰만 보기</button></div>
+                    </div>
+
+                    <div class="review-list" id="review-list">
+                        <!-- JS 연동 -->
+                    </div>
+                </div>
+
+                <!-- 교환 반품 -->
+                <div id="return-section" class="content-section return-section">
+                    <h3>교환 및 반품 안내</h3>
+                    <div class="return-info-box">
+                        <table>
+                            <tr>
+                                <th>교환/반품 신청기간</th>
+                                <td>
+                                    교환/반품 신청은 배송완료 후 7일 이내에 가능합니다.<br>
+                                    상품이 표기/광고내용과 다르거나 계약내용과 다른 경우 상품을 받으신 날부터 3개월 이내,<br>
+                                    또는 사실을 알게된 날(알 수 있었던 날)부터 30일 이내에 신청 가능합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>교환/반품 회수(배송)비용</th>
+                                <td>
+                                    상품의 불량/하자 또는 표시광고 및 계약 내용과 다른 경우 해당 상품의 회수(배송)비용은 무료이나, 고객님의 단순변심 및 사이즈/색상 불만에 관련된 교환/반품의 경우 택배비는 고객님 부담입니다.<br>
+                                    ※ 구매 시 선택한 옵션과 수량 또는 프로모션 적용 여부에 따라 반품/교환 배송비가 변경될 수 있습니다. 자세한 반품/교환 배송비는 MY SSG에서 반품/교환 시 확인 가능합니다.<br><br>
+                                    <strong>반품 배송비: 3,000원 (최초 배송비가 무료인 경우, 6,000원 부과)</strong><br>
+                                    <strong>교환 배송비: 6,000원</strong><br><br>
+                                    제주/도서산간 지역은 추가 운임이 발생할 수 있습니다.<br>
+                                    단, 반품/교환 비용은 상품 및 반품/교환 사유에 따라 변경될 수 있으므로 반품/교환 신청 화면에서 확인 부탁드립니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>교환/반품 불가 안내</th>
+                                <td>
+                                    <strong>전자상거래 등에서 소비자보호에 관한 법률에 따라 다음의 경우 청약철회 등을 할 수 없습니다.</strong><br>
+                                    고객님이 상품 포장을 개봉하여 사용 또는 설치 완료되어 상품의 가치가 현저히 감소한 경우<br>
+                                    (단, 내용 확인을 위한 포장 개봉의 경우는 예외)<br>
+                                    고객님의 단순변심으로 인한 교환/반품 신청이 상품 수령한 날로부터 7일이 경과한 경우<br>
+                                    신선식품(냉장/냉동 포함)을 단순변심/주문착오로 교환/반품 신청하는 경우<br>
+                                    고객님의 사용 또는 일부 소비에 의해 상품의 가치가 현저히 감소한 경우<br>
+                                    시간이 지나 다시 판매하기 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우<br>
+                                    복제가 가능한 재화 등의 포장을 훼손한 경우(DVD, CD, 도서 등 복제 가능한 상품)<br>
+                                    고객님의 요청에 따라 개별적으로 주문제작되는 상품으로 재판매가 불가능한 경우(이니셜 표시상품, 사이즈 맞춤상품 등)<br>
+                                    기타, 상품의 교환, 환불 및 상품 결함 등의 보상은 소비자분쟁해결기준(공정거래위원회 고시)에 의함
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="return-notice">
+                            ※ 자세한 내용은 <strong style="text-decoration:underline; color:#666;">고객센터</strong>로 문의 부탁드립니다. (A/S 문의는 제조사로 먼저 문의 시 빠르게 처리 가능합니다.)<br>
+                            ※ 전자상거래 등에서의 소비자 보호에 관한 법률에 의한 반품규정이 판매자가 상품상세 페이지 등에서 개별적으로 고지 또는 지정한 반품조건보다 우선합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 우측 플로팅 사이드바 (스크롤 따라다님) -->
+        <aside class="right-floating-bar" id="right-floating-bar">
+            <div class="floating-product-title">바른고을 의성진쌀 10kg</div>
+            <div class="qty-selector">
+                <button>-</button>
+                <input type="text" value="1" readonly>
+                <button>+</button>
+                <strong class="floating-price-top">38,980원</strong>
+            </div>
+            
+            <div class="floating-bottom">
+                <div class="total-price-box">
+                    <span>총 금액</span>
+                    <strong id="floating-price">38,980원</strong>
+                </div>
+                <div class="floating-buttons">
+                    <button class="btn-cart">장바구니</button>
+                    <div class="btn-row">
+                        <a id="floating-buy-link" href="" class="btn-buy">바로구매</a>
+                        <button class="btn-gift">적립받고 구매하기</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="side-ad">
+                <img src="./image/detail/카드할부.webp" alt="AD">
+            </div>
+            <div class="top-btn-wrap">
+                <button class="btn-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top-links">
+                <div class="links-left">
+                    <a href="#">회사소개</a> | 
+                    <a href="#" class="highlight">개인정보처리방침</a> | 
+                    <a href="#">이용약관</a> | 
+                    <a href="#">청소년 보호방침</a> | 
+                    <a href="#">지식재산권센터</a> | 
+                    <a href="#">입점상담</a> | 
+                    <a href="#" class="highlight">광고신청</a>
+                </div>
+                <div class="links-right">
+                    <select><option>판매자서비스</option></select>
+                    <select><option>FAMILY SITE</option></select>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="info-left">
+                    <p><strong>(주) 에스에스지닷컴</strong></p>
+                    <p class="cs-phone"><i class="fas fa-headset"></i> 1577-3419 
+                        <button class="small-btn">전화문의 전 클릭 ></button> 
+                        <button class="small-btn">고객센터AI ></button>
+                        <span class="sub-link">고객센터/전자금융거래분쟁처리</span>
+                    </p>
+                    <p class="company-details">대표자: 최택원 | 서울특별시 영등포구 영신로34길 30 | 사업자등록번호: 870-88-01143 | 통신판매업 신고번호: 제2025-서울영등포-0509호</p>
+                    <p class="company-details">개인정보보호책임자: 김우진 | Fax: 02-2068-7118 | ssg@ssg.com</p>
+                    <div class="info-btns">
+                        <button>사업자 정보확인 ></button>
+                        <button>소비자분쟁해결기준 ></button>
+                    </div>
+                </div>
+                <div class="info-right">
+                    <span style="font-size:24px; font-weight:bold; color:#ccc;">SSG.COM</span>
+                    <div class="sns-icons">
+                        <i class="fab fa-facebook" style="font-size: 30px; color: #333;"></i>
+                        <i class="fab fa-instagram" style="font-size: 30px; color: #333; margin-left:10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><strong>SSG.COM 호스팅서비스 사업자 : (주)에스에스지닷컴</strong></p>
+                <div class="footer-logos">
+                    <img src="./image/detail/콜사.png" alt="KOLSA" style="height:40px;">
+                    <img src="./image/detail/운영매장.png" alt="위해상품차단시스템" style="height:40px;">
+                    <div class="guarantee-text">
+                        <strong>우리은행 채무지급보증 안내</strong><br>
+                        당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.
+                    </div>
+                    <button class="small-btn">서비스 가입사실 확인 ></button>
+                </div>
+                <p class="copyright">
+                    ㈜에스에스지닷컴은 SSG.COM 실시간 항공권, 실시간 호텔 예약, 실시간 렌터카 서비스, 티켓 예매 서비스의 통신판매중개자로서 거래 당사자가 아니며, 입점 판매사가 등록한 상품 정보 및 거래에 대해 책임을 지지 않습니다.<br>
+                    ㈜에스에스지닷컴 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠사업 진흥법 등에 의하여 엄격히 금지됩니다. <a href="#" style="text-decoration:underline;">콘텐츠 산업 진흥법에 따른 표시 ></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/detail.js"></script>
+</body>
+</html>

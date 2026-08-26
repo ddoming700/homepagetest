@@ -1,0 +1,72 @@
+[
+  {
+    "name": "주간배송",
+    "image": "./image/주간배송.png",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "새벽배송",
+    "image": "./image/새벽배송.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "트레이더스 배송",
+    "image": "./image/트레이더스배송.png",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "자주구매",
+    "image": "./image/자주구매.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "선물하기",
+    "image": "./image/download.png",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "쓱7클럽",
+    "image": "./image/7클럽.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "사업자매장",
+    "image": "./image/123.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "여행",
+    "image": "./image/여행.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "랜더스 티켓",
+    "image": "./image/download.webp",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "뷰티",
+    "image": "./image/뷰티.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "SSG 추석",
+    "image": "./image/ssg추석.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "신세계 추석",
+    "image": "./image/신세계추석.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "여성명품",
+    "image": "./image/여성명품.avif",
+    "url": "./detail.html?id=rice-001"
+  },
+  {
+    "name": "남성패션",
+    "image": "./image/남성패션.avif",
+    "url": "./detail.html?id=rice-001"
+  }
+]

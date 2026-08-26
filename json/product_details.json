@@ -1,0 +1,78 @@
+{
+  "rice-001": {
+    "title": "바른고을 의성진쌀 10kg",
+    "category": "SSG.COM > 쌀/잡곡/견과 > 백미 > 10kg이상~20kg미만",
+    "price": 38980,
+    "originalPrice": 42980,
+    "unitPrice": "(100g 당 390원)",
+    "rating": 4.8,
+    "reviewCount": 43728,
+    "cardBenefitPrice": 37031,
+    "deliveryInfo": "로그인하시면 배송지에 맞는 배송유형을 확인할 수 있습니다.",
+    "origin": "상세설명참조",
+    "mainImage": "./image/detail/의성진쌀.avif",
+    "detailImages": [
+      "./image/detail/내부사진.jfif"
+    ],
+    "recommendations": [
+      {
+        "name": "[경주시농협] 천년고도 경주삼광쌀 10kg/당일도정",
+        "price": 38800,
+        "img": "./image/detail/삼광쌀.avif"
+      },
+      {
+        "name": "밥선생 혼합22곡 4kg (2kg 2봉) 잡곡 영양곡물",
+        "price": 12770,
+        "img": "./image/detail/22.avif"
+      },
+      {
+        "name": "밥선생 정성가득 경기미 10kg 상등급",
+        "price": 39890,
+        "img": "./image/detail/경기.webp"
+      },
+      {
+        "name": "밥선생 국산100% 혼합15곡 4kg (2kg 2봉)",
+        "price": 19310,
+        "img": "./image/detail/15.avif"
+      },
+      {
+        "name": "영광군농협 새청무 10kg 당일도정",
+        "price": 35800,
+        "img": "./image/detail/청.avif"
+      }
+    ],
+    "photoReviews": [
+      "./image/detail/리뷰1.avif",
+      "./image/detail/리뷰2.avif",
+      "./image/detail/쌀알들.avif"
+    ],
+    "reviews": [
+      {
+        "userId": "paq*******",
+        "date": "2026.08.25",
+        "text": "배송 잘 받았습니다",
+        "freshness": "보통이에요",
+        "taste": "보통이에요",
+        "packing": "보통이에요"
+      },
+      {
+        "userId": "yi2*******",
+        "date": "2026.08.25",
+        "text": "늘 구매하는 제품입니다.",
+        "freshness": "보통이에요",
+        "taste": "보통이에요",
+        "packing": "보통이에요"
+      },
+      {
+        "userId": "jcm*******",
+        "date": "2026.08.25",
+        "text": "항상 구매하고 있습니다.",
+        "freshness": "신선해요",
+        "taste": "맛있어요",
+        "packing": "꼼꼼해요"
+      }
+    ],
+    "link": "#",
+    "id": "rice-001"
+  }
+}

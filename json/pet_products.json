@@ -1,0 +1,131 @@
+{
+  "banner": {
+    "image": "./image/download.avif",
+    "text": "PETS"
+  },
+  "products": [
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 푸들 어덜트 8세이상 1.5kg",
+      "benefit": "최고판매가 33,000원",
+      "originalPrice": 32900,
+      "discount": 10,
+      "price": 29610,
+      "badges": [
+        "배송비 3,000원·조건부"
+      ],
+      "rating": "4.0",
+      "reviewCount": "2",
+      "image": "./image/냥이사료.avif",
+      "url": "#"
+    },
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 말티즈 어덜트 3kg",
+      "benefit": "최고판매가 56,550원",
+      "originalPrice": 52900,
+      "discount": 10,
+      "price": 47610,
+      "badges": [
+        "무료배송"
+      ],
+      "rating": "4.9",
+      "reviewCount": "21",
+      "image": "./image/멈머사료.avif",
+      "url": "#"
+    },
+    {
+      "brand": "딩고나투라",
+      "badgeBrand": "공식수입",
+      "name": "나투라다이어트 리듀스드 강아지 다이어트 중대형견 췌장염 저지방 저칼로리 사료",
+      "benefit": "",
+      "originalPrice": null,
+      "discount": null,
+      "priceText": "51,300원~",
+      "unitPrice": "(100g당 1,710원)",
+      "badges": [
+        "무료배송",
+        "오늘출발 ~13:00 주문시♥"
+      ],
+      "rating": "",
+      "reviewCount": "",
+      "image": "./image/췌장염.avif",
+      "url": "#"
+    },
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 미니 인도어 퍼피 8.7kg",
+      "benefit": "최고판매가 101,000원",
+      "originalPrice": 90000,
+      "discount": 10,
+      "price": 81000,
+      "badges": [
+        "무료배송"
+      ],
+      "rating": "5.0",
+      "reviewCount": "4",
+      "image": "./image/퍼피.avif",
+      "url": "#"
+    },
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 미니 인도어 어덜트 3kg",
+      "benefit": "최고판매가 47,300원",
+      "originalPrice": 43900,
+      "discount": 10,
+      "price": 39510,
+      "badges": [
+        "무료배송"
+      ],
+      "rating": "4.7",
+      "reviewCount": "43",
+      "image": "./image/포메성견.avif",
+      "url": "#"
+    },
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 미니 스타터 3kg",
+      "benefit": "최고판매가 57,580원",
+      "originalPrice": 52000,
+      "discount": 10,
+      "price": 46800,
+      "badges": [
+        "무료배송"
+      ],
+      "rating": "4.0",
+      "reviewCount": "2",
+      "image": "./image/미니.avif",
+      "url": "#"
+    },
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 엑스스몰 어덜트 8세이상 3kg",
+      "benefit": "최고판매가 52,840원",
+      "originalPrice": 49900,
+      "discount": 10,
+      "price": 44910,
+      "badges": [
+        "무료배송"
+      ],
+      "rating": "4.6",
+      "reviewCount": "5",
+      "image": "./image/작은개.avif",
+      "url": "#"
+    },
+    {
+      "brand": "로얄캐닌",
+      "name": "강아지사료 미니 인도어 어덜트 8.7kg",
+      "benefit": "최고판매가 102,000원",
+      "originalPrice": 89500,
+      "discount": 10,
+      "price": 80550,
+      "badges": [
+        "무료배송"
+      ],
+      "rating": "4.5",
+      "reviewCount": "40",
+      "image": "./image/포메.avif",
+      "url": "#"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSG.COM</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <!-- 상단 이벤트 띠 -->
+  <div class="top-event">
+    <div class="top-event-inner">
+      <span>매일 룰렛 돌리고 선물 받으세요! 로보락 S10 득템 찬스!</span>
+      <button type="button" id="topEventClose">×</button>
+    </div>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header-top">
+      <div class="header-top-inner">
+        <div class="brand-links">
+          <a href="#">이마트몰</a>
+          <a href="#">신세계몰</a>
+          <a href="#">신세계백화점</a>
+        </div>
+        <div class="utility-links">
+          <a href="#">고객센터</a>
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="header-main-inner">
+        <a href="#" class="logo">
+          <span class="logo-small">믿고 사는 즐거움</span>
+          <strong>SSG.COM</strong>
+        </a>
+
+        <form class="search-form" id="searchForm">
+          <input type="search" id="searchInput" placeholder="SSG 통합검색" autocomplete="off">
+          <button type="submit" aria-label="검색">
+            <span class="search-icon">⌕</span>
+          </button>
+        </form>
+
+        <div class="header-actions">
+          <button type="button" aria-label="좋아요">♡</button>
+          <button type="button" aria-label="마이페이지">♙</button>
+          <button type="button" aria-label="장바구니">
+            🛒
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 메인 네비게이션 -->
+    <nav class="main-nav">
+      <div class="main-nav-inner">
+        <button type="button" id="categoryButton" class="category-button">
+          <span class="hamburger">☰</span>
+          전체 카테고리
+        </button>
+        <div class="category-panel" id="categoryPanel"></div>
+        <div class="nav-links" id="navLinks"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 메인 배너 슬라이더 -->
+    <section class="main-banner-section">
+      <div class="banner-viewport" id="bannerViewport">
+        <div class="banner-track" id="bannerTrack"></div>
+      </div>
+
+      <button type="button" class="banner-arrow banner-prev" id="bannerPrev" aria-label="이전 배너">‹</button>
+      <button type="button" class="banner-arrow banner-next" id="bannerNext" aria-label="다음 배너">›</button>
+
+      <div class="banner-control">
+        <button type="button" id="bannerPause" aria-label="자동재생 일시정지">Ⅱ</button>
+        <button type="button" id="bannerPlay" aria-label="자동재생 시작">▶</button>
+        <button type="button" id="bannerAll">전체보기</button>
+        <span id="bannerCounter" class="banner-counter">01 / 08</span>
+      </div>
+    </section>
+
+    <!-- 빠른 메뉴 -->
+    <section class="quick-section">
+      <div class="quick-list" id="quickList"></div>
+    </section>
+
+    <!-- 관심도 급상승 상품 -->
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>지금 관심도 급상승 중인 상품</h2>
+        <div class="section-arrows">
+          <button type="button" id="productPrev">‹</button>
+          <button type="button" id="productNext">›</button>
+        </div>
+      </div>
+
+      <div class="product-viewport">
+        <div class="product-track" id="productTrack"></div>
+      </div>
+    </section>
+
+    <!-- 반려동물 / 카테고리 기획전 섹션 -->
+    <section class="pet-section">
+      <!-- 상단 고정 바 (Sticky Tab Bar) -->
+      <div class="sticky-pet-header" id="stickyPetHeader">
+        <div class="pet-tab-bar" id="petTabBar"></div>
+      </div>
+
+      <!-- 서브 카테고리 바 -->
+      <div class="pet-subtab-bar" id="petSubTabBar"></div>
+
+      <!-- 반려동물 상품 영역 (좌측 배너 + 우측 4x2 그리드) -->
+      <div class="pet-content-wrap">
+        <button type="button" class="pet-nav-arrow pet-nav-prev" aria-label="이전">‹</button>
+        <button type="button" class="pet-nav-arrow pet-nav-next" aria-label="다음">›</button>
+
+        <div class="pet-left-banner" id="petLeftBanner"></div>
+        <div class="pet-product-grid" id="petProductGrid"></div>
+      </div>
+
+      <!-- 바로가기 버튼 링크 -->
+      <div class="pet-more-btn-wrap">
+        <a href="#" class="pet-more-btn">강아지사료/간식 바로가기 &gt;</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 하단 상세 푸터 -->
+  <footer class="ssg-footer">
+    <!-- 1. 사이트맵/서비스 링크 (6단 구성) -->
+    <div class="footer-sitemap-wrap">
+      <div class="footer-sitemap">
+        <div class="sitemap-col">
+          <h3>신세계브랜드</h3>
+          <ul>
+            <li><a href="#">신세계몰</a></li>
+            <li><a href="#">신세계백화점</a></li>
+            <li><a href="#">이마트몰</a></li>
+            <li><a href="#">신세계TV</a></li>
+            <li><a href="#">스타벅스</a></li>
+            <li><a href="#">시코르</a></li>
+            <li><a href="#">프리미엄 아울렛</a></li>
+            <li><a href="#">신세계라이브쇼핑</a></li>
+            <li><a href="#">스타필드</a></li>
+            <li><a href="#">까사미아</a></li>
+            <li><a href="#">여행</a></li>
+          </ul>
+        </div>
+
+        <div class="sitemap-col">
+          <h3>SSG.COM 서비스매장</h3>
+          <ul>
+            <li><a href="#">특가</a></li>
+            <li><a href="#">선물하기</a></li>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">이벤트&amp;쿠폰</a></li>
+            <li><a href="#">브랜드관</a></li>
+            <li><a href="#">SSG.COM Biz.</a></li>
+          </ul>
+        </div>
+
+        <div class="sitemap-col">
+          <h3>BEST 브랜드관</h3>
+          <ul>
+            <li><a href="#">랄프 로렌</a></li>
+            <li><a href="#">JAJU</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">룰루레몬</a></li>
+            <li><a href="#">CJ제일제당</a></li>
+            <li><a href="#">대상</a></li>
+            <li><a href="#">매일유업</a></li>
+            <li><a href="#">SSG.COM 건강식품</a></li>
+            <li><a href="#">풀무원</a></li>
+            <li><a href="#">다이슨</a></li>
+            <li><a href="#">아모레퍼시픽</a></li>
+            <li><a href="#">Premium Beauty</a></li>
+          </ul>
+        </div>
+
+        <div class="sitemap-col">
+          <h3>스마트 쇼핑팁</h3>
+          <ul>
+            <li><a href="#">신세계포인트</a></li>
+            <li><a href="#">신세계상품권</a></li>
+            <li><a href="#">SSGPAY</a></li>
+          </ul>
+        </div>
+
+        <div class="sitemap-col">
+          <h3>고객센터</h3>
+          <ul>
+            <li><a href="#">자주 찾는 질문</a></li>
+            <li><a href="#">1:1 이메일상담</a></li>
+          </ul>
+          <a href="#" class="btn-footer-link">고객센터 메인 ▶</a>
+        </div>
+
+        <div class="sitemap-col">
+          <h3>공지사항</h3>
+          <ul>
+            <li><a href="#">SSG.COM 사칭 사이트 주의 안내</a></li>
+            <li><a href="#">쓱7클럽 장보기 적립 및 SSG머니 사...</a></li>
+          </ul>
+          <a href="#" class="btn-footer-link">공지사항 더보기 ▶</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 하단 정책 링크 & 패밀리 사이트 -->
+    <div class="footer-policy-wrap">
+      <div class="footer-policy-inner">
+        <ul class="policy-links">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#" class="text-point">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">청소년 보호방침</a></li>
+          <li><a href="#">지식재산권센터</a></li>
+          <li><a href="#">입점상담</a></li>
+          <li><a href="#" class="text-orange">광고신청</a></li>
+        </ul>
+
+        <div class="family-select-wrap">
+          <select aria-label="협력업체서비스">
+            <option>협력업체서비스</option>
+          </select>
+          <select aria-label="FAMILY SITE">
+            <option>FAMILY SITE</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 회사 사업자 정보 & 인증 마크 -->
+    <div class="footer-company-wrap">
+      <div class="footer-company-inner">
+        <div class="company-info-left">
+          <div class="company-name">(주) 에스에스지닷컴</div>
+          <div class="cs-call-line">
+            <strong class="cs-tel">📞 1577-3419</strong>
+            <button type="button" class="btn-corp">전화문의 전 클릭 ▶</button>
+            <button type="button" class="btn-corp">고객센터AI ▶</button>
+            <span class="cs-desc">고객센터/전자금융거래분쟁처리</span>
+          </div>
+          <p class="corp-desc">
+            대표자: 최택원 | 서울특별시 영등포구 영신로34길 30 | 사업자등록번호: 870-88-01143 | 통신판매업 신고번호: 제2025-서울영등포-0509호<br>
+            개인정보보호책임자: 김우진 | Fax: 02-2068-7118 | ssg@ssg.com
+          </p>
+          <div class="corp-btns">
+            <button type="button" class="btn-corp">사업자 정보확인 ▶</button>
+            <button type="button" class="btn-corp">소비자분쟁해결기준 ▶</button>
+          </div>
+
+          <div class="safe-trade-line">
+            <strong>SSG.COM 호스팅서비스 사업자 : (주)에스에스지닷컴</strong>
+            <div class="safe-badges">
+              <img src="./image/콜사.png" alt="한국온라인쇼핑협회" class="auth-img">
+              <img src="./image/운영매장.png" alt="위해상품차단시스템" class="auth-img">
+              <div class="safe-bank-text">
+                <strong>우리은행 채무지급보증 안내</strong><br>
+                당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.
+              </div>
+              <button type="button" class="btn-corp-small">서비스 가입사실 확인 ▶</button>
+            </div>
+          </div>
+
+          <p class="copyright-notice">
+            (주)에스에스지닷컴은 SSG.COM 실시간 항공권, 실시간 호텔 예약, 실시간 렌터카 서비스, 티켓 예매 서비스의 통신판매중개자로서 거래 당사자가 아니며, 입점 판매사가 등록한 상품 정보 및 거래에 대해 책임을 지지 않습니다.<br>
+            (주)에스에스지닷컴 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등에 의하여 엄격히 금지됩니다. <span>콘텐츠 산업 진흥법에따른 표시 &gt;</span>
+          </p>
+        </div>
+
+        <div class="company-info-right">
+          <div class="sns-icons">
+            <span class="sns-logo-text">SSG.COM</span>
+            <a href="#" class="sns-circle" aria-label="Facebook">f</a>
+            <a href="#" class="sns-circle" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
